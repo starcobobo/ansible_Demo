@@ -1,6 +1,12 @@
 pipeline{
   agent any  
   stages{  
+     
+      stage('Git checkout') {
+            steps {
+                git branch: 'main', credentialsId: '', url: 'https://github.com/obiomaokorowu/ansible_Demo.git'
+            }
+        }
       stage("Run an ansible playbook"){
         steps{
           ansiblePlaybook credentialsId: 'SSH-KEY', inventory: 'hosts', playbook: 'nginx_install.yaml'
