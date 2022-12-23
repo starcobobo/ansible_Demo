@@ -1,7 +1,7 @@
 [Servers]
-52.201.249.45
-174.129.48.151
-34.207.104.119
+3.250.77.119
+54.246.49.245
+54.229.70.179
 
 [all:vars]
 ansible_python_interpreter=/usr/bin/python3
